@@ -10,10 +10,10 @@
   <ItemGroup>
     <PackageReference Include="FirebaseAdmin" Version="2.2.0" />
     <PackageReference Include="Google.Cloud.Storage.V1" Version="3.6.0" />
-    <PackageReference Include="Imgur.API" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
     <PackageReference Include="Mobsites.Blazor.SignaturePad" Version="1.1.7" />
+    <PackageReference Include="Octokit" Version="0.50.0" />
   </ItemGroup>
 
   <ItemGroup>
