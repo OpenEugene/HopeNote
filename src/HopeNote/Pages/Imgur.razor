@@ -1,0 +1,23 @@
+﻿@page "/imgur"
+
+<PageTitle>Imgur</PageTitle>
+
+
+
+@code {
+
+    private _apiClient
+
+    protected override async Task OnInitializedAsync()
+    {
+        var apiClient = new ApiClient("b4777ca3ad59e37");
+        var httpClient = new HttpClient();
+
+        var filePath = "img/IMG_7884.jpg";
+        using var fileStream = File.OpenRead(filePath);
+
+        var imageEndpoint = new ImageEndpoint(apiClient, httpClient);
+        var imageUpload = await imageEndpoint.UploadImageAsync(fileStream);
+    }
+
+}
